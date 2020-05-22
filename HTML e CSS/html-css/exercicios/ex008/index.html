@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações</title>
+    <style>
+        code {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras Marcações</h1>
+    <h2>Código-fonte / Pré-Formatação</h2>
+    <p>É possível marcar comandos e codigos fonte como <code>window.document.getElementById()</code> formatando com uma fonte de espaçamento fixo por padrão, que pode ser feito usando a tag &lt;CODE&gt;</p>
+    <p>Para escrever blocos maiores de código é possivel usar a tag &lt;PRE&gt; junto com a tag &lt;CODE&gt;</p>
+    <pre>
+        <code>
+    numeros = [[], [], []]
+    for x in range(0, 3):
+        for y in range(0, 3):
+            numeros[x].append(int(input(f'Escreva o valor para a posição [{x}, {y}]: ')))
+    print('\033[36m=\033[0m'*40)
+    for x in range(0, 3):
+        for y in range(0, 3):
+            print(f'[ {numeros[x][y]:^4} ]', end='')
+        print()
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>É possível marcar citações de outros autores usando a tag &lt;Q&gt;, como por exemplo:</p>
+    <p>Como diria um sábio: <q>O cumputador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Para citações maiores é melhor usar a tag &lt;BLOCKQUOTE&gt;, como no exemplo a seguir</p>
+    <p>No livro PHP: a Bíblia, Tim Converse explica o que é PHP.</p>
+    <blockquote>
+        O PHP é uma linguagem para a criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores Web (especialmente Apache). O PHP permite incorporar fragmentos de código em páginas HTML normais - código esse que é interpretado à medida que suas páginas são oferecidas aos usuários. O PHP também serve como uma linguagem que "cola", facilitando a conexão de suas páginas Web com o banco de dados do lado servidor.
+    </blockquote>
+    <p>É possível salvar a fonte do conteúdo na tag blockquote usando o parâmetro cite</p>
+    <h2>Abreviações</h2>
+    <p>Para ajudar os leitores a entender as siglas de seu site, pode ser usada a tag &lt;ABBR&gt;, comono exemplo a seguir:</p>
+    <p>Estou fazendo um curso de <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascating Style Sheets">CSS</abbr> e <abbr title="JavaScript">JS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p>Também é possível escrever texto de trás para frente com a tag &lt;BDO&gt; como o parametro dir="rtl", como por exemplo:</p>
+    <p><bdo dir="rtl">Está frase está escrita invertida no formato RIGHT-TO-LEFT</bdo></p>
+</body>
+</html>
