@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(98, 168, 248);
+            color: cornsilk;
+            font: normal 18pt Arial;
+        } /* define o corpo do site */
+        h1 {
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1> <!--Escreve "Olá Mundo" como título de nível 1-->
+    <p>Estou livre da maldição do Olá Mundo</p>
+    <script>
+        var n1 = window.prompt('Escreva um número')
+        var n2 = window.prompt('Escreva outro número')
+        var s = Number(n1) + Number(n2)
+        window.alert('A soma entre ' + n1 + ' e ' + n2 + ' é ' + s)
+        // (number + number) "+" serve para adição
+        // (string + string) "+" serve para concatenação
+    </script>
+</body>
+</html>
