@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Identificador de Brasileiros</h1>
+    <p>
+        Nome do país de naciomento: <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </p>
+    <div id='res'>
+        
+    </div>
+    <script>
+        function verificar() {
+            var pais = window.document.querySelector('input#pais').value
+            var res = window.document.getElementById('res')
+            if (pais != 'Brasil') {
+                res.innerHTML = '<p>Você é <strong>estrangeiro</strong></p>'
+                res.innerHTML += '<p>You are a <strong>foreigner</strong></p>'
+                res.innerHTML += '<p>Have a nice day</p>'
+            } else {
+                res.innerHTML = '<p>Você é <strong>Brasileiro</strong><p>'
+                res.innerHTML += '<p>Tenha um bom dia</p>'
+            }
+
+        }
+
+    </script>
+</body>
+</html>
