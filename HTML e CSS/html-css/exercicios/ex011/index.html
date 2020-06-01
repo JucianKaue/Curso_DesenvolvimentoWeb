@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho da janela
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem de tamanho flexivel - Foto de tamanho grande">
+    </picture>
+
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a reporduzir audios em HTML5</p>
+    <h2>Segunda maneira</h2>
+    <audio src="midia/The_Farmer_In_The_Dell_Instrumental.mp3" controls></audio>
+    <!-- MP3 WAV OGG-->
+
+    <h2>Segunda maneira de reproduzir audio. </h2>
+    <p>O audio a seguir e um podcast do guanabara</p>
+    <audio preload="metadata" controls loop>
+        <!-- 1 tentativa-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!-- 2 tentativa-->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <!-- 3 tentativa-->
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <!-- Caso nenhuma funcionar-->
+        <p>Infelismente o seu navegador nao consegue reproduzir audio. <a href="midia/guanacast-33.mp3">Clique aqui apra baixar o arquivo</a></p>
+    </audio>
+    <h1></h1>
+
+
+</body>
+</html>

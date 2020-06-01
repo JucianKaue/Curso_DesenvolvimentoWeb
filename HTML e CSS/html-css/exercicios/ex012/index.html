@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="560" poster="imagens/coffe.jpg" preload="metadata" controls loop>
+        <source src="midia/video.m4v" type="video/mp4" >
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.ogv" type="video/ogg">
+        <source src="midia/video.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <h1>Inserindo vídoes do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DIraePpIAog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/367670191?autoplay=1&loop=1&color=e9d3d4&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+</body>
+</html>
