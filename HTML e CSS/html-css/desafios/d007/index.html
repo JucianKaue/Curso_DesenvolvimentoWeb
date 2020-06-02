@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampiliar o tamanho da janela do seu navegador para melhorar sua experiência</p>
+    <picture>
+        <source media="(max-width: 1030px)" srcset="imagens/paisagem-p.jpg" type="image/png">
+        <source media="(max-width: 1330px)" srcset="imagens/paisagem-m.jpg" type="image/png">
+        <img src="imagens/paisagem-g.jpg" alt="Imagem de uma mulher no mar">
+    </picture>
+</body>
+</html>
