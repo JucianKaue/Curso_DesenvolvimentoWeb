@@ -49,5 +49,4 @@ function verificar() {
 
     msg.innerHTML = `Detectamos ${gender} de ${idade} anos`
     msg.appendChild(img)
-
 }
